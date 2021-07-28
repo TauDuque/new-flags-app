@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap");
+body {
+  background-image: url("../src/assets/sheldon2.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 55vh;
+  width: 500px;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 8px 15px rgba(5, 5, 5, 0.7);
+}
+
+.shelly {
+  border-radius: 50%;
+  width: 7rem;
+  height: 7.9rem;
+  position: relative;
+  left: 12.2rem;
+  box-shadow: 0 8px 15px rgba(5, 5, 5, 0.9);
+}
+
+.flag-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  bottom: 3.8rem;
+}
+
+.primeiraCor {
+  height: 145px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  border: 1px solid black;
+  background: #ffffff;
+  border-width: 3px 1px 3px 3px;
+}
+
+.segundaCor {
+  height: 145px;
+  width: 100px;
+  background: #191970;
+  border: 1px solid black;
+  border-width: 3px 1px;
+}
+
+.terceiraCor {
+  height: 145px;
+  width: 100px;
+  background: #000000;
+  border: 1px solid black;
+  border-width: 3px 3px 3px 1px;
+}
+
+/* Bazinga container */
+.bazinga-container {
+  display: flex;
+  margin-top: 110px;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 55vh;
+  width: 500px;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 8px 15px rgba(5, 5, 5, 0.7);
+}
+
+h3 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 2.9rem;
+  bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.palavras1 {
+  font-family: "Londrina Shadow", cursive;
+  letter-spacing: 5px;
+}
+
+.palavras2 {
+  font-family: "Gaegu", cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: -3px;
+  background: linear-gradient(to right, #095fab 10%, #25abe8 50%, #ca4147 60%);
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* nome dos países */
+h4 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  bottom: 4.5rem;
+}
+
+.country-style {
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 250px;
+  }
+
+  .shelly {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6.9rem;
+    position: relative;
+    left: 4.8rem;
+    box-shadow: 0 8px 15px rgba(5, 5, 5, 0.9);
+  }
+}
+@media screen and (max-height: 645px) {
+  .container {
+    width: 250px;
+    height: 22rem;
+  }
+  .shelly {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6.9rem;
+    position: relative;
+    left: 4.8rem;
+    box-shadow: 0 8px 15px rgba(5, 5, 5, 0.9);
+  }
+}
